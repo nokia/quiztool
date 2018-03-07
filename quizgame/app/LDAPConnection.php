@@ -25,7 +25,7 @@ class LDAPConnection {
     protected $entries = "";
 
     public function __construct($username, $password) {
-        $this->ldaphost = "ed-p-gl.emea.nsn-net.net";
+        $this->ldaphost = "your LDAP url goes here";
         $this->ldapconn = ldap_connect($this->ldaphost);
         ldap_set_option($this->ldapconn, LDAP_OPT_PROTOCOL_VERSION, 3);
         ldap_set_option($this->ldapconn, LDAP_OPT_REFERRALS, 0);
