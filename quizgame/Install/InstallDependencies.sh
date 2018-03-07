@@ -1,7 +1,6 @@
 echo "Updating your OS"
 apt -y update
 apt -y upgrade
-echo "Time travel..."
 apt-get -y install php7.0
 apt-get -y install php7.0-xml
 apt-get -y install php-mcrypt php-gd
@@ -29,10 +28,10 @@ echo "Creating a directory->/var/www/html/Quiztool"
 mkdir /var/www
 mkdir /var/www/html
 mkdir /var/www/html/Quiztool
-echo "Cloning the Quiztool current version."
+echo "Cloning the Quiztool's current version."
 cd /var/www/html/Quiztool
 git clone https://gitlabe1.ext.net.nokia.com/zavetz/Quiz-tool.git
-echo "Starting Laravel instalation with composer"
+echo "Starting Laravel installation with composer"
 cd /var/www/html/Quiztool/Quiz-tool/quizgame
 composer install
 chown www-data: -R /var/www/html/Quiztool/
@@ -80,3 +79,4 @@ php artisan key:generate
 php artisan migrate
 php artisan db:seed
 echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
+echo "Seemingly we're done here."
