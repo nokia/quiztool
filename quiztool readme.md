@@ -1,10 +1,10 @@
-Quiztool is a project aimed at developing a tool for making and playing custom Quiz-Games possible for Nokia employees.
+Quiztool is a project aimed at developing a tool for making and playing custom Quiz-Games possible mainly for companies' employees among themselves.
 ----------------------------
 
 
 Functional information of the current version ( 2017.11.29. ):
 
-The tool is accessible through the Nokia network by going to the following address: http://10.183.21.84/
+The tool is accessible in its current form only for Nokie employees through the Nokia network by going to a specific IP address. This repository makes the tool available for public usage, but every developer will have to alter the tool to fit their personal use, since as it is it only works inside Nokia's network.
 
 The header includes the following clickable buttons that are present at all times during the usage of the tool: 
 
