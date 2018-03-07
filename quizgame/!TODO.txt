@@ -1,12 +1,4 @@
-DONE
 
-ejhayson.bernaldo@atos.net
-
-proxy:
-set HTTP_PROXY=http://10.144.1.10:8080
-set HTTPS_PROXY=http://10.144.1.10:8080
-eucalyptus
-10.158.100.1:8080
 
 -MyGames: a master page option, that goes back to user's created game where it can be started or deleted
 
