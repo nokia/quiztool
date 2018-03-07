@@ -1,0 +1,17 @@
+Groups	-
+		- TAS RD		        
+		- VIPT RD MSS	- Project and Continuous Improvement-								
+								- GSM-R	-								
+								- MSS Core TS HU -
+												
+								- MSS Core			-
+													- MSS Core Dev 2 ~SCCC ? ~SCIN?
+													- MSS Core Dev 3 ~SCCC ? ~SCIN?
+													- MSS Core Dev 1 ~SCCC ? ~SCIN?
+								
+													- STA -
+													- OLCM -
+													- VIPT SDM RD -
+													- VLR 
+													
+													- UPR	

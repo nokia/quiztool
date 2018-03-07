@@ -1,0 +1,75 @@
+acsatlos acsatlos Shalker05
+
+HEADER:
+
+Allows login, if not already logged in.
+
+Quiz game: redirects to home page
+
+Create: redirects to create page.
+
+Join: redirects to join page.
+
+Return Current Game: returns user to game he's joined
+
+Profile button: opens profile panel. Can get to games created by the user.
+Admins can go to admin page (currently adding questions only).
+Logout button logs the user out and redirects to home page.
+
+HOMEPAGE:
+Currently empty
+
+CREATE GAME:
+-choose questions for the quiz:
+selecting and deleting one at a time and everyone working properly.
+selecting removes from table and adds to selected table
+deleting from chosen questions table reverses the process by deleting from table and sending a filter request
+set duration of quiz
+
+-filtering:
+sends an AJAX request to the server to only give back results that are fit for the search criteria
+(currenty question id and question text works, other options will work after proper implementation of groups)
+
+filter toggle button inside question selector at the rightmost top row hides and shows filter menu
+
+-add custom questions:(only visible for admins)
+displays and hides question creation form
+(form is planned to add custom question to the quiz and option to upload it to database at will)
+
+-Name is required in order for the quiz otherwise error message is shown (questions lost in this case)
+
+practice button redirects to the game and flags the game in the database as not visible.
+Create button redirects to the games master page
+
+GAME:
+Displays questions one at a time. Back, previous, and submit buttons appear only when they should.
+Submit button redirects to scores page
+
+SCORES:
+simply shows all questions with right answers and the users given answers.
+Ok button redirects to home and delets the question from database.
+
+GAME LOBBY:
+shows game data
+creator or admin can start game, kick out users, delete game
+
+JOIN:
+shows games that are flagged with visible. Displays name and creator. Creator cand delete his own games.
+Admins can delet any game.
+join button redirects users to a gamelobby and adds them to the game.
+Join by token: games now have a hash of their names. Gamecreator can see it on the masterpage.
+Users can join game by given gametoken
+If you join another game, you'll be droped out of the last one
+
+MYGAMES:
+displays games that belongs to the user even if they are flagged as visible.
+a master page button, that goes back to user's created game where it can be started or deleted
+deleting game clears the game from all joined users data
+
+
+ADMIN: (will be add_questions page)
+only for admins
+can upload questions.
+question and answer fields are required
+question group selection or giving new one is required, but only one of them can be present
+all cases are checked and feed back with error messages.

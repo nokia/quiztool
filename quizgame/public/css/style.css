@@ -1,0 +1,305 @@
+/*Bootstrap classes*/
+.navbar.navbar-default {
+	border:none;
+	border-radius: 0;
+	border-bottom: 1px solid #563d7c;
+}
+
+.navbar-default .navbar-brand {
+	color: #563d7c;
+	font-weight: bold;
+}
+
+
+/* Quiz Game Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Header styles*/
+
+.navbar .login-form .input-group .input-group-addon {
+	background-color: #563d7c;
+	border-color: #563d7c;
+	color: #ddd;
+}
+
+.navbar .login-form .btn {
+	color: #563d7c;
+}
+
+.game-index > div {
+	margin-bottom: 30px;
+}
+
+.game-index .lobby .table .only-mygames {
+	display: none;
+}
+
+/* GAME LOBBY STYLES */
+.game-lobby {
+}
+
+.game-lobby .game-dash h3 {
+	padding: 0;
+	margin:  0 0 30px 0;
+}
+
+.game-lobby .game-dash h3::first-letter {
+	text-transform: uppercase;
+}
+
+.game-lobby .game-info ul {
+	padding: 10px 20px 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.game-lobby .game-info ul li:not('last-child') {
+	margin-right: 20px;
+}
+
+.game-lobby .game-info ul li .attribute {
+	font-weight: bold;
+}
+
+.game-lobby .game-info ul li .attribute .fa {
+	font-size: 24px;
+	padding-right: 5px;
+}
+
+.game-lobby .game-info ul li .fa-clipboard {
+	padding-left: 5px;
+	color: #4286f4;
+	opacity: 0.6;
+}
+.game-lobby .game-info ul li .fa-clipboard:hover {
+	cursor: pointer;
+}
+
+.game-lobby .playerlist {
+	list-style-type: none;
+	padding: 0;
+}
+
+.game-lobby .playerlist li {
+	display: inline-block;
+	margin: 10px;
+}
+
+.game-lobby .playerlist li a,
+.game-lobby .playerlist li .fa {
+	display: block;
+	text-align: center;
+}
+
+.game-lobby .playerlist li .fa {
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+.game-lobby .quiz-overview .question-list {
+	list-style-type: none;
+}
+
+.game-lobby .quiz-overview .question-list > li {
+	border: 2px solid #563d7c;
+	margin: 5px 0 10px;
+	padding: 10px 15px;
+	border-radius: 0 16px;
+	color: #333;
+	position: relative;
+}
+
+.game-lobby .quiz-overview .question-list > li .fa {
+	position: absolute;
+	font-size: 23px;
+	left: -35px;
+	top: 0;
+}
+
+#timer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(50%) translateY(50%);
+	width: 100px;
+	height: 50%;
+	font-weight: bold;
+}
+
+.game-mode .nav-controls {
+	margin-top: 20px;
+}
+
+.game-mode .question-header {
+	font-size: 18px;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #563d7c;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #fff;
+  background-color: #563d7c;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+.quiz-scores .header {
+	margin: 20px 0;
+}
+
+/*.quiz-scores .body p {
+	border-bottom: 1px solid #563d7c;
+}*/
+
+.quiz-scores .question-result {
+	position: relative;
+	border-radius: 15px;
+	margin: 30px 0;
+	border: 1px solid #ccc;
+}
+
+.quiz-scores .question-result .status-indicator {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.quiz-scores .question-result-answers > li {
+	position: relative;
+}
+
+.quiz-scores .question-result .answer.corr-answ {
+	color: #3c763d;
+}
+
+.quiz-scores .question-result .answer.corr-answ .fa {
+	position: absolute;
+	left: -20px;
+	top: 3px;
+	color: #000;
+	background: #fff;
+}
+
+.quiz-scores .question-text {
+	border-radius: 15px 15px 0 0;
+	color: #555;
+	margin: 0;
+	padding: 15px 50px 15px 15px;
+}
+
+.quiz-scores .question-result-answers {
+	padding: 15px 30px;
+	/*list-style-type: none;*/
+}
+
+.quiz-scores .result-scores {
+	color: #888;
+	font-size: 32px;
+	text-align: center;
+}
+
+.quiz-scores .footer form {
+	margin: 20px 0;
+	text-align: center;
+}

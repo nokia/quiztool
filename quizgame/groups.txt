@@ -1,0 +1,38 @@
+sql for groups
+
+SELECT groups.id, groups.name FROM `groups` INNER JOIN `belong_to_group` ON groups.id = belong_to_group.g_or_u_id WHERE belong_to_group.belong_to_g_id = 1
+
+SELECT belong_to_group.g_or_u_id groups.name FROM `belong_to_group` INNER JOIN `groups` ON belong_to_group.g_or_u_id=groups.id WHERE belong_to_group.belong_to_g_id = 1
+
+SELECT COUNT(id) FROM `trainings` WHERE name LIKE 'cc%' OR name LIKE 'IN %' OR name LIKE 'introduction to in%' OR name LIKE 'introduction to ca%' OR name LIKE 'tnsdl%' OR name LIKE 'tas training%'
+
+1,2,3,4,5,11,12,13,26,33,37,64,108,113,116,136,139,141,146,152,154,155,156,177,180,207,
+
+Groups	-
+		- 3GC	-
+		- TAS RD-		        
+		- MBB CS-
+				- MSS Core TS Espoo	-
+		        
+		- MBB	-
+				- VIPT MSS SyVe	-				
+				- VIPT RD MSS	- Project and Continuous Improvement-								
+								- GSM-R	-								
+								- MSS support	-
+												- MSS Core TS HU -
+												
+								- MSS Core			-
+													- MSS Core Dev 2 -
+													- MSS Core Dev 3 -
+													- MSS Core Dev 1 -
+								
+								- MSS Application
+								Development Cluster	-
+													- STA -
+													- OLCM -
+													- VIPT SDM RD -
+													- VLR -
+													
+													- UPR	-
+															- UPR 1	-
+															- UPR 2	-
