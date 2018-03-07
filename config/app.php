@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://euca-10-181-42-80.eucalyptus.escloc25.eecloud.nsn-net.net/'),
+    'url' => env('APP_URL', 'the url to the root of your application'),
 
     /*
     |--------------------------------------------------------------------------
